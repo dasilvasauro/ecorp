@@ -1,0 +1,198 @@
+<!---
+	autor: bruno santos
+	criado em 25 de maio de 2020
+	SITE CRIADO SOMENTE PARA FINS DE ESTUDO
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<!---CSS--->
+	<link rel="stylesheet" href="app/css/bootstrap.min.css">
+	<link rel="stylesheet" href="app/css/styles.css">
+	<link rel="shortcut icon" href="app/img/favicon.png" sizes="32x32" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Corp</title>
+</head>
+
+<body>
+	<!--NAVBAR--->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="barranav">
+			<a class="navbar-brand" href="#"><img src="app/img/logoe.png" width="30" height="29.5" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="?i=home">Sobre a E-Corp <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="?i=servicos">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="?i=juntese">Junte-se a Nós</a>
+					</li>
+				</ul>
+				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Suporte</button>
+			</div>
+		</nav>
+	</header>
+
+	<!---CARROSSEL--->
+	<div class="carousel slide" data-ride="carousel" id="carrossel" >
+		<ol class="carousel-indicators">
+			<li data-target="#carrossel" data-slide-to="0" class="active"></li>
+			<li data-target="#carrossel" data-slide-to="1"></li>
+			<li data-target="#carrossel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item">
+				<!--responvidade item carrossel--->
+				<div style="height:2000px; width:2000px;overflow:hidden;">
+					<img class="img-responsive" src="app/img/e1.jpg" width="100%" alt="First slide">
+				</div>
+				<div class="carousel-caption">
+					<h5>Segurança e Confiabilidade</h5>
+					<p>Nossa infraestrutura e cobertura são as melhores do mercado, pra que seu negócio esteja sempre em boas mãos.</p><button href="?i=servicos" class="btn btn-outline-light">Saiba Mais</button> 
+				</div>
+			</div>
+			<div class="carousel-item">
+				<!--responvidade item carrossel--->
+				<div style="height:1700px; width:1700px;overflow:hidden;">
+					<img class="img-responsive" src="app/img/e2.jpg" width="100%" alt="Second slide">
+				</div>
+				<div class="carousel-caption">
+					<h5>Tranquilidade e Facilidade</h5>
+					<p>Viva sua vida sem se preocupar, estamos em todo o lugar.</p><button href="?i=servicos" class="btn btn-outline-light">Conheça os Nossos Serviços</button> 
+				</div>
+			</div>
+			<div class="carousel-item active">
+				<!--responvidade item carrossel--->
+				<div style="height:1700px; width:1700px;overflow:hidden;">
+					<img class="img-responsive" src="app/img/e3.jpg" width="100%" alt="Third slide">
+				</div>
+				<div class="carousel-caption">
+					<h5>Entendemos de Tudo</h5>
+					<p>Os maiores profissionais estão se dedicando para que tudo funcione da melhor maneira.</p><button href="?i=servicos" class="btn btn-outline-light">Conheça a Infraestrutura</button>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carrossel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#carrossel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Próxima</span>
+		</a>
+	</div>
+
+	<!---  CARDS --->
+	<div class="container">
+		<div class="card-deck" id="deck">
+			<div class="card mb-4">
+				<img class="card-img-top img-fluid" src="app/img/me.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">Lorem Ipsum</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+				</div>
+			</div>
+			<div class="card mb-4">
+				<img class="card-img-top img-fluid" src="app/img/me2.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">Lorem Ipsum</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+				</div>
+			</div>
+			<div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+			<div class="card mb-4">
+				<img class="card-img-top img-fluid" src="app/img/me2.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">Lorem Ipsum</h4>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+				</div>
+			</div>
+
+
+<!---CARDS (MEU MODO)
+  <div class="container-fluid">
+			<div class="row">
+				<div class="col-4" id="cards">
+					<div class="card">
+					<img src="img/me.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title text-center">Lorem ipsum</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+							<div class="d-flex justify-content-center">
+								<a href="#" class="btn btn-outline-dark">Saiba Mais</a>
+							</div>
+					</div>
+				</div>
+			</div>
+	
+	
+				<div class="col-4">
+					<div class="card" id="cards">
+					<img src="img/me2.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title text-center">Lorem ipsum</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-outline-dark">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+				<div class="col-4">
+					<div class="card" id="cards">
+					<img src="img/me3.jpg" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title text-center">Lorem ipsum</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta mauris justo, quis placerat justo gravida a. Aliquam erat volutpat. Morbi condimentum lorem nibh, sed vehicula urna sagittis sed. Phasellus laoreet ante in ex aliquam, ut aliquet purus consequat.</p>
+						<div class="d-flex justify-content-center">
+							<a href="#" class="btn btn-outline-dark">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!---FALE COM UM ESPECIALISTA
+			<div class="col-3 text-center" id="Especialista">
+				<div class="container-fluid">
+					<h1>Fale com um de nossos Especialistas</h1>
+					<br>
+					<a href="#" class="btn btn-dark">Entre em Contato</a>
+				</div>
+			</div>-->
+
+
+
+		</div>
+
+		<div class="card-body text-center">
+			<h5 class="card-title">Atendimento VIP</h5>
+			<p class="card-text">Precisa falar urgentemente com um de nossos atendentes? Clique no botão abaixo e será redirecionado para nossa pagina de chat.</p>
+			<a href="#help" class="btn btn-primary">Ir até lá</a>
+		</div>
+	</div>
+	<hr/>
+</div>
+
+
+
+<footer class="container">
+	<p class="float-right"><a href="#">Voltar ao topo</a></p>
+	<p>© 2015-2019 E-Corp, Inc. · <a href="#">Privacidade</a> · <a href="#">Termos de Serviço</a></p>
+
+	<!-- jQuery -->
+	<script src="app/js/jquery.js"></script>
+	<script src="app/js/bootstrap.min.js"></script>	
+	<script src="app/js/script.js"></script>
+</footer>
+
+</body>
+</html>
